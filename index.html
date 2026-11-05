@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice making a table</title>
+    <link rel="stylesheet" href="table.css">
 
 </head>
 <body>
     <header>
         <h1>My class schedule</h1>
     </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 <main>
-        <table border = "3">
+        <table id="schedule" border = "1">
             <caption>My Class Schedule</caption>
 
             <thead>
@@ -28,10 +34,9 @@
             <tbody>
                 <tr>
                     <th colspan="6">Fall 2026</th>
-                    <caption>Fall 2026</caption>
                 </tr>
                 <tr>
-                    <td scope="row">CS</td>
+                    <th scope="row">CS</th>
                     <td>140</td>
                     <td>Web Design</td>
                     <td>Portal: 2</td>
@@ -116,6 +121,17 @@
                 <h3>Did AI evey try to give you more than you asked for, such as writing your code? What did you do?
                 </h3>
                 <p>Yes, AI has gava them. I managed not to see them.</p>
+            </div>
+
+            <div>
+                <h2>Question 2</h2>
+                
+                <h3>Why don't we use the border attribute?</h3>
+                <p>HTML border attribute is not used because it is deprecated in modern HTML, and visual styling should be handled with CSS for better flexibility.</p>
+                <h3>What is the easiest way to color every other row a different color?</h3>
+                <p>The easiest way is to use the CSS :nth-child(even) or :nth-child(odd) pseudo-class on your table rows (tr).</p>
+                <h3>What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.</h3>
+                <p>The value inside the parentheses defines a formula or keyword for a repeating selection pattern, and using 3n instead would select every third row.</p>
             </div>
 </main>
 
